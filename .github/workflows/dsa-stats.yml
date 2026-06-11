@@ -17,12 +17,18 @@ jobs:
 
       - name: Fetch Codolio Stats SVG
         run: |
-          curl -o dsa-stats.svg https://dsastats.vercel.app/api/codolio/ImagineAnsh
+          HTTP_STATUS=$(curl -o dsa-stats.svg -w "%{http_code}" https://dsastats.vercel.app/api/codolio/ImagineAnsh)
+          echo "HTTP Status: $HTTP_STATUS"
+          if [ "$HTTP_STATUS" != "200" ]; then
+            echo "Failed to fetch SVG. Status: $HTTP_STATUS"
+            cat dsa-stats.svg
+            exit 1
+          fi
 
-      - name: Commit and Push SVG
+      - name: Commit and Push SVG to main
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add dsa-stats.svg
-          git commit -m "Update Codolio stats $(date +'%Y-%m-%d')" || echo "No changes"
-          git push
+          git diff --cached --quiet || git commit -m "Update Codolio stats $(date +'%Y-%m-%d')"
+          git push origin main
