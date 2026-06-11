@@ -2,7 +2,7 @@
 <h3>Software Developer || Competitive Programmer</h3>
 
 # 💫 About Me:
-🔭 
+
 <br>💬 Ask me about **React, Express, Node, MongoDB**  
 <br>📫 How to reach me **anshsomani05@gmail.com**    
 <br>📄 Know about my experiences [https://www.linkedin.com/in/ansh-somani-98527428a](https://www.linkedin.com/in/ansh-somani-98527428a)    
@@ -35,7 +35,7 @@
 ![LeetCode Stats](https://leetcard.jacoblin.cool/anshsomani05?theme=dark&font=Baloo_2)
 
 # 📊 Codolio Stats:
-![Codolio DSA Stats](./dsa-stats.svg)
+[![Codolio](https://img.shields.io/badge/Codolio-View%20DSA%20Stats-orange?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0tMSAxNXYtNEg3bDUtOXY0aDRsLTUgOXoiLz48L3N2Zz4=)](https://codolio.com/profile/ImagineAnsh)
 
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
