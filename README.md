@@ -32,7 +32,7 @@
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=AnshSomani&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
 
 # 📊 LeetCode Stats:
-![LeetCode Stats](https://leetcode-stats-six.vercel.app/?username=anshsomani05&theme=dark)
+![LeetCode Stats](https://leetcard.jacoblin.cool/anshsomani05?theme=dark&font=Baloo_2)
 
 # 📊 Codolio Stats:
 ![DSA Stats](https://raw.githubusercontent.com/AnshSomani/AnshSomani/dsaStats/dsa-stats.svg)
