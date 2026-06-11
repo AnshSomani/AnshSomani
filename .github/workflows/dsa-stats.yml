@@ -1,15 +1,12 @@
-name: Update DSA Stats Card
+name: Update Codolio DSA Stats
 
 permissions:
   contents: write
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
   schedule:
-    - cron: "0 0 * * *"   # runs every 24 hours
+    - cron: "0 0 * * *"
 
 jobs:
   update-dsa-stats-card:
@@ -18,14 +15,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Fetch Stats and Save SVG
+      - name: Fetch Codolio Stats SVG
         run: |
           curl -o dsa-stats.svg https://dsastats.vercel.app/api/codolio/ImagineAnsh
 
-      - name: Force Commit changes
+      - name: Commit and Push SVG
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add dsa-stats.svg
-          git commit -m "Update stats card $(date +'%Y-%m-%d %H:%M:%S')"
-          git push --force origin HEAD:dsaStats
+          git commit -m "Update Codolio stats $(date +'%Y-%m-%d')" || echo "No changes"
+          git push
