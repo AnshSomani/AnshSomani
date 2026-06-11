@@ -35,7 +35,7 @@
 ![LeetCode Stats](https://leetcard.jacoblin.cool/anshsomani05?theme=dark&font=Baloo_2)
 
 # 📊 Codolio Stats:
-![DSA Stats](https://raw.githubusercontent.com/AnshSomani/AnshSomani/dsaStats/dsa-stats.svg)
+![Codolio DSA Stats](./dsa-stats.svg)
 
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
